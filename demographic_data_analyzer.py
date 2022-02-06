@@ -68,4 +68,4 @@ def calculate_demographic_data(print_data=True):
         'top_IN_occupation': top_IN_occupation
     }
 
-calculate_demographic_data()
+# Ran 10 tests in 4.100s (°-°)
