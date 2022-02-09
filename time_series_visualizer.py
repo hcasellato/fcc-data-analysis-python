@@ -7,7 +7,7 @@ register_matplotlib_converters()
 
 # Import data (Make sure to parse dates. Consider setting index column to 'date'.)
 def d_par(x): return dt.datetime.strptime(x, '%Y-%m-%d')
-df = pd.read_csv('fcc-forum-pageviews.csv', sep=',', index_col=['date'],
+df = pd.read_csv('data/fcc-forum-pageviews.csv', sep=',', index_col=['date'],
                  parse_dates=['date'], date_parser=d_par)
 
 # Clean data

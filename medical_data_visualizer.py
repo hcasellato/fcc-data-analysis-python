@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # Import data
-df = pd.read_csv("medical_examination.csv", sep = ",")
+df = pd.read_csv("data/medical_examination.csv", sep = ",")
 
 # Add 'overweight' column
 df['overweight'] = np.where(df['weight']/((df['height']/100)**2) > 25, 1, 0)
